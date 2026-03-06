@@ -32,6 +32,6 @@ jobs:
           php artisan config:clear
           php artisan cache:clear
 
-          echo "Deploy completed"
+          echo "Deployment completed"
 
           EOF
