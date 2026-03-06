@@ -25,6 +25,8 @@ jobs:
           cd /var/www/html/laravel
           git pull origin main
 
+          echo "${{ secrets.LARAVEL_ENV }}" > .env
+
           composer install --no-dev --optimize-autoloader
 
           php artisan migrate --force
